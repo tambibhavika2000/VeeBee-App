@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+<div id="id01" class="modal">
+    <form class="modal-content animate" action="/login_validation" method="post">
+    <div class="imgcontainer">
+      <img src="static/avatar.jpg" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+      <input type="email" placeholder="Enter Email ID" name="email">
+      <input type="password" placeholder="Enter Password" name="psw">
+      <button type="submit" onSubmit=window.location='/option' value='login'>Login</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <p class="new_user">New User ?</p>
+      <button onclick="location.href='/register';" class="Sign-Up" type="button" value='signup'>Sign-Up</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
