@@ -3,22 +3,26 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="static/style.css">
+<title>login</title>
 </head>
 <body>
 <div id="id01" class="modal">
-    <form class="modal-content animate" action="/login_validation" method="post">
+    <form class="modal-content animate" action="/login_validation" method="post" target="_self">
     <div class="imgcontainer">
       <img src="static/avatar.jpg" alt="Avatar" class="avatar">
     </div>
     <div class="container">
       <input type="email" placeholder="Enter Email ID" name="email">
       <input type="password" placeholder="Enter Password" name="psw">
-      <button type="submit" onSubmit=window.location='/option' value='login'>Login</button>
+      <button type="submit" value='login' target="_self">Login</button>
     </div>
     <div class="container" style="background-color:#f1f1f1">
+      <div class="text-center">Create New Account <a href='/register' target="_self">Register</a></div>
+  </div>
+    <!-- <div class="container" style="background-color:#f1f1f1">
       <p class="new_user">New User ?</p>
       <button onclick="location.href='/register';" class="Sign-Up" type="button" value='signup'>Sign-Up</button>
-    </div>
+    </div> -->
   </form>
 </div>
 </body>
